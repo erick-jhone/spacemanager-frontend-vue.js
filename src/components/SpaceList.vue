@@ -19,7 +19,7 @@
     components: {
       SpaceCard,
     },
-    props: {
+   props: {
       filteredSpaces: {
         type: Array,
         required: true,

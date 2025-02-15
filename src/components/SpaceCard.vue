@@ -1,7 +1,7 @@
 <template>
     <div class="card space-card">
       <div class="card-body">
-        <h2 class="card-title">{{ space.name }}</h2>
+        <h2 class="card-title">{{ space.nome }}</h2>
         <p class="card-text"><strong>Descrição:</strong> {{ space.descricao }}</p>
         <p class="card-text"><strong>Tipo:</strong> {{ space.tipoEspaco }}</p>
         <p class="card-text"><strong>Capacidade:</strong> {{ space.capacidade }} pessoas</p>

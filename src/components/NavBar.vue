@@ -2,6 +2,10 @@
   <div class="home">
     <!-- Cabeçalho -->
     <header class="header">
+      <nav>
+      <router-link to="/">Home</router-link>
+      <router-link to="/new">Novo</router-link>
+    </nav>
       <h1>Bem-vindo ao Sistema de Gestão de Espaços Físicos</h1>
       <p>Gerencie salas, laboratórios e auditórios de forma eficiente.</p>
     </header>
@@ -115,10 +119,13 @@ export default {
       // Navega para a página de reservas do espaço selecionado
       this.$router.push({ name: "Reservations", params: { id: spaceId } });
     },
-    goToAddSpace() {
+  
       // Navega para a página de adicionar novo espaço
-      this.$router.push({ name: "AddSpace" });
-    },
+ goToAddSpace() {
+  this.$router.push({ name: 'CreateSpace' });
+}
+
+    
   },
 };
 </script>
